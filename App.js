@@ -27,3 +27,5 @@ function App(){
 }
 
 ReactDOM.render(<App />,document.getElementById("root"));
+
+/*Copyrights © https://github.com/Dramos02*/
