@@ -1,0 +1,52 @@
+.container {
+    padding-top:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dis dis dis dis"
+    "AC C divide multiply"
+    "seven eight nine substract"
+    "four five six add"
+    "one two three equal"
+    "zero zero dot equal"
+    ;
+}
+
+.calcButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.red{
+    background-color: rebeccapurple;
+}
+.green {
+    background-color: greenyellow;
+}
+.dis{
+    grid-area: dis;
+    background-color: blanchedalmond;
+    text-align: right;
+    font-size: 20px;
+}
+.zero{
+    grid-area: zero;
+}
+
+.equal{
+    grid-area: equal;
+}
