@@ -9,13 +9,20 @@ function App(){
         setAnswer(eval(expression));
     }
 
-    const allClear = () => {};
-    const clear = () => {};
+    const allClear = () => {
+        setExpression("");
+        setAnswer(0);
+    };
+    const clear = () => {
+    setExpression(prev => prev.split("").slice(0, prev.length-1).join(""));
+    setAnswer(0);
+    };
     return (
         <div className="container">
             <div className="grid">
                 <div className="dis">
                     <input type="text" value={expression} placeholder="0" disabled/>
+                    <div className="total">{answer}</div>
                 </div>
 
                 <div  onClick={allClear}className="calcButton AC red">AC</div>
