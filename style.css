@@ -1,3 +1,7 @@
+* {
+    transition: all 0.5s ease-in-out;
+}
+
 .container {
     padding-top:100px;
     display: flex;
@@ -96,28 +100,28 @@ input::placeholder{
 }
 
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
 }
-  
+    
 footer > p {
-    font-weight: bold;
-    color: white;
-    font-size: 24px;
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-  
+    
 .zoom {
-    transition: transform .5s;
-    margin: 0 auto;
+      transition: transform .5s;
+      margin: 0 auto;
 }
-  
+    
 .zoom:hover {
-    -ms-transform: scale(2); /* IE 9 */
-    -webkit-transform: scale(2); /* Safari 3-8 */
-    transform: scale(2); 
+      -ms-transform: scale(2); /* IE 9 */
+      -webkit-transform: scale(2); /* Safari 3-8 */
+      transform: scale(2); 
 }
 /*Copyrights © https://github.com/Dramos02*/
